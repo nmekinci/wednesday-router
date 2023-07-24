@@ -1,0 +1,27 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+
+.bg-img-notfound{
+    @include bgImg(100vh,"../../assets/img/404.jpg");
+    text-align: center;
+}
+.button{
+    margin-top: 10rem;
+    margin-left: 4rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: $text-color;
+    background-color: $primary-color;
+    opacity: 0.8;
+    border: none;
+    border-radius: 2rem;
+    @include transition(0.5s);
+    // transition: ease 0.5s;
+    &:hover{
+        // opacity: 0.5;
+        background-color: $text-color;
+        color: $primary-color;
+    }
+
+}
